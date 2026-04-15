@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
+using Portals.Utilities;
 using UnityEngine;
-using URPPortals.Runtime.Scripts.Utilities;
 
-namespace URPPortals.Runtime.Scripts
+namespace Portals
 {
     [DisallowMultipleComponent]
     public sealed class Portal : MonoBehaviour

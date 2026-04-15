@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace URPPortals.Runtime.Scripts
+namespace Portals
 {
     [DisallowMultipleComponent]
     public sealed class PortalRenderer : MonoBehaviour

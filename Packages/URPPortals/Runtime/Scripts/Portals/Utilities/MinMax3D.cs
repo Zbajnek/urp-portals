@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace URPPortals.Runtime.Scripts.Utilities
+namespace Portals.Utilities
 {
     public struct MinMax3D {
         public float XMin;
