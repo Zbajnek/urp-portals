@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilities;
 
-public class Portal : MonoBehaviour
+[DisallowMultipleComponent]
+public sealed class Portal : MonoBehaviour
 {
     private static readonly int MainTex = Shader.PropertyToID("_MainTex");
     private static readonly int DisplayMask = Shader.PropertyToID("displayMask");

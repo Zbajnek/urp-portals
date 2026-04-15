@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class PortalRenderer : MonoBehaviour
+[DisallowMultipleComponent]
+public sealed class PortalRenderer : MonoBehaviour
 {
     private Portal[] _portals;
 
