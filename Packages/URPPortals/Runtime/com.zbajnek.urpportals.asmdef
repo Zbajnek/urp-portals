@@ -1,7 +1,6 @@
 {
   "name": "com.zbajnek.urpportals",
   "references": [
-    "Unity.InputSystem",
     "Unity.RenderPipelines.Universal.Runtime"
   ],
   "includePlatforms": [],
