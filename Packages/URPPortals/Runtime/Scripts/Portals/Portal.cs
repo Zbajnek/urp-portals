@@ -154,6 +154,8 @@ namespace Portals
             ProtectScreenFromClipping();
         }
 
+        // Use custom projection matrix to align portal camera's near clip plane with the surface of the portal
+        // NOTE: This affects the precision of the depth buffer, which can cause issues with effects like SSAO
         private void SetNearClipPlane()
         {
             var clipPlane = transform;
