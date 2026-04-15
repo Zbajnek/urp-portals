@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Utilities
+namespace URPPortals.Runtime.Scripts.Utilities
 {
     public static class PortalUtility
     {

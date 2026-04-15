@@ -1,25 +1,28 @@
 using UnityEngine;
 
-[DisallowMultipleComponent]
-public sealed class PortalRenderer : MonoBehaviour
+namespace URPPortals.Runtime.Scripts
 {
-    private Portal[] _portals;
-
-    private void Awake()
+    [DisallowMultipleComponent]
+    public sealed class PortalRenderer : MonoBehaviour
     {
-        _portals = FindObjectsByType<Portal>(FindObjectsInactive.Exclude);
-    }
+        private Portal[] _portals;
 
-    private void LateUpdate()
-    {
-        foreach (var portal in _portals)
+        private void Awake()
         {
-            portal.Render();
+            _portals = FindObjectsByType<Portal>(FindObjectsInactive.Exclude);
         }
 
-        foreach (var portal in _portals)
+        private void LateUpdate()
         {
-            portal.PostPortalRender();
+            foreach (var portal in _portals)
+            {
+                portal.Render();
+            }
+
+            foreach (var portal in _portals)
+            {
+                portal.PostPortalRender();
+            }
         }
     }
 }

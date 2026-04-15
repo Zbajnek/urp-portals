@@ -192,7 +192,7 @@
       "url": "https://packages.unity.com"
     },
     "com.zbajnek.urpportals": {
-      "version": "file:Portals",
+      "version": "file:URPPortals",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
